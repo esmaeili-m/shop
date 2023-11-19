@@ -88,7 +88,7 @@
         document.addEventListener('livewire:initialized', () => {
             @this.on('category-update-status', (event) => {
                     Swal.fire({
-                        position: "top-start",
+                        position: "center",
                         icon: "success",
                         title: "وضعیت دسته با موفقیت آپدیت شد",
                         showConfirmButton: false,
@@ -101,7 +101,7 @@
                 });
             @this.on('category-delete', (event) => {
                     Swal.fire({
-                        position: "top-start",
+                        position: "center",
                         icon: "success",
                         title: 'دسته '+event.title +' با موفقیت حذف شد ',
                         showConfirmButton: false,

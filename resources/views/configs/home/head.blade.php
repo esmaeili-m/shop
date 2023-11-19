@@ -13,6 +13,7 @@
     <link href="{{asset('dashboard/assets/css/style.css')}}" rel="stylesheet" />
     <!-- You can choose a theme from css/styles instead of get all themes -->
     <link href="{{asset('dashboard/assets/css/styles/all-themes.css')}}" rel="stylesheet" />
+    @stack('style')
     <style>
         .pointer{
             cursor: pointer;

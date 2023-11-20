@@ -134,7 +134,7 @@
         </div>
     </section>
     @push('scripts')
-        <script src="https://cdn.tiny.cloud/1/mr4wgn97xsa8n8cj4q2jzxy1vw6mpwzltiee4mqjgve1jed2/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+        <script src="{{asset('dashboard/assets/js/tinymce.min.js')}}"></script>
         <script>
             tinymce.init({
                 language:'fa',

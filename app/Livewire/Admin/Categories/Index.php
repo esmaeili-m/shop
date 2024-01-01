@@ -31,9 +31,18 @@ class Index extends Component
         $this->dispatch('category-delete',title:$category->title);
         $category->delete();
     }
+
+    public function updateItemOrder($postsOrder)
+    {
+        $ids=collect($postsOrder);
+        $category=Category::whereIn('id',$ids->pluck('value'))->orderBy('order','asc')->pluck('id','order');
+        foreach ($category as $key => $value){
+                dd($ids->where('value',$value));
+        }
+    }
     public function render()
     {
-        $data = Category::where('title', 'LIKE', '%'.$this->search.'%')->with('parent')->orderBy('id','desc')->paginate(8);
+        $data = Category::where('title', 'LIKE', '%'.$this->search.'%')->with('parent')->orderBy('order','asc')->paginate(8);
         return view('livewire.admin.categories.index',compact('data'));
     }
 }

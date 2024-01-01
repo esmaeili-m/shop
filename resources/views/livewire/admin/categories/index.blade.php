@@ -46,12 +46,12 @@
                                     <th>عملیات</th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody wire:sortable="updateItemOrder">
                                 @php($counter=1)
                                 @foreach($data as $item)
-                                    <tr>
-                                        <th scope="row">{{$counter}}</th>
-                                        <td>{{$item->title}}</td>
+                                    <tr wire:sortable.item="{{ $item->id }}" wire:key="task-{{ $item->id }}">
+                                        <th wire:sortable.handle scope="row">{{$counter}}</th>
+                                        <td >{{$item->title}}</td>
                                         <td>{{$item->slug}}</td>
                                         <td>{{substr(strip_tags($item->description),0,20)}} ... </td>
                                         <td>
@@ -63,6 +63,9 @@
                                         </td>
                                         <td>{{$item->parent->title ?? 'ندارد'}}</td>
                                         <td>
+                                            <button  class="btn tblActnBtn">
+                                                <i class="material-icons"><a class="text-dark" href="{{route('category.attributes.index',$item->id)}}">featured_play_list</a></i>
+                                            </button>
                                             <button class="btn tblActnBtn">
                                                 <i class="material-icons"><a class="text-dark" href="{{route('category.update',$item->id)}}">mode_edit</a></i>
                                             </button>

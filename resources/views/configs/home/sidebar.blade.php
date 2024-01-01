@@ -46,6 +46,20 @@
 
                 </ul>
             </li>
+            <li class="{{request()->routeIs('post.*') ? 'active' : ''}}">
+                <a href="#" onClick="return false;" class="menu-toggle">
+                    <i class="menu-icon ti-shopping-cart-full"></i>
+                    <span> فروشگاه </span>
+                </a>
+                <ul class="ml-menu">
+                    <li class="{{request()->routeIs('post.list') ? 'active' : ''}}">
+                        <a href="{{route('post.list')}}">لیست محصولات</a>
+                    </li>
+                    <li class="{{request()->routeIs('post.create') ? 'active' : ''}}">
+                        <a href="{{route('post.create')}}">افزودن محصول جدید</a>
+                    </li>
+                </ul>
+            </li>
             <li>
                 <a href="#" onClick="return false;" class="menu-toggle">
                     <i class="menu-icon ti-shopping-cart-full"></i>

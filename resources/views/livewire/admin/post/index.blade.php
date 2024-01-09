@@ -68,14 +68,17 @@
                                         </td>
 
                                         <td>
-                                            <button wire:click="delete({{$item->id}})" class="btn tblActnBtn">
-                                                <i class="material-icons"><a class="text-dark" href="{{route('post.update',$item->id)}}">attach_money</a></i>
+                                            <button class="btn tblActnBtn">
+                                                <i class="material-icons"><a class="text-dark" href="{{route('post.price',$item->id)}}">attach_money</a></i>
                                             </button>
                                             <button  class="btn tblActnBtn">
                                                 <i class="material-icons"><a class="text-dark" href="{{route('post.attributes.index',$item->id)}}">featured_play_list</a></i>
                                             </button>
                                             <button class="btn tblActnBtn">
                                                 <i class="material-icons"><a class="text-dark" href="{{route('post.update',$item->id)}}">mode_edit</a></i>
+                                            </button>
+                                            <button class="btn tblActnBtn">
+                                                <i class="material-icons"><a class="text-dark" href="{{route('post.seo',$item->id)}}">queue_play_next</a></i>
                                             </button>
                                             <button wire:click="delete({{$item->id}})" class="btn tblActnBtn">
                                                 <i class="material-icons">delete</i>
@@ -98,32 +101,45 @@
     </section>
     <script>
         document.addEventListener('livewire:initialized', () => {
-        @this.on('item-update-status', (event) => {
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: "وضعیت محصول با موفقیت آپدیت شد",
-                showConfirmButton: false,
-                timerProgressBar: true,
-                timer: 2000,
-                customClass: {
-                    popup: 'my-swal-with',
-                },
+            @this.on('item-update-status', (event) => {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "وضعیت محصول با موفقیت آپدیت شد",
+                    showConfirmButton: false,
+                    timerProgressBar: true,
+                    timer: 2000,
+                    customClass: {
+                        popup: 'my-swal-with',
+                    },
+                });
             });
-        });
-        @this.on('item-delete', (event) => {
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: 'محصول '+event.title +' با موفقیت حذف شد ',
-                showConfirmButton: false,
-                timerProgressBar: true,
-                timer: 2000,
-                customClass: {
-                    popup: 'my-swal-with',
-                },
+            @this.on('item-delete', (event) => {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: 'محصول '+event.title +' با موفقیت حذف شد ',
+                    showConfirmButton: false,
+                    timerProgressBar: true,
+                    timer: 2000,
+                    customClass: {
+                        popup: 'my-swal-with',
+                    },
+                });
             });
-        });
+            @this.on('item-price', (event) => {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: 'قیمت محصول '+event.title +' با موفقیت ثبت شد ',
+                    showConfirmButton: false,
+                    timerProgressBar: true,
+                    timer: 2000,
+                    customClass: {
+                        popup: 'my-swal-with',
+                    },
+                });
+            });
         });
     </script>
 </div>

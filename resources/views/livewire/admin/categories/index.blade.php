@@ -63,11 +63,17 @@
                                         </td>
                                         <td>{{$item->parent->title ?? 'ندارد'}}</td>
                                         <td>
+                                            <button class="btn tblActnBtn">
+                                                <i class="material-icons"><a class="text-dark" href="{{route('category.price',$item->id)}}">attach_money</a></i>
+                                            </button>
                                             <button  class="btn tblActnBtn">
                                                 <i class="material-icons"><a class="text-dark" href="{{route('category.attributes.index',$item->id)}}">featured_play_list</a></i>
                                             </button>
                                             <button class="btn tblActnBtn">
                                                 <i class="material-icons"><a class="text-dark" href="{{route('category.update',$item->id)}}">mode_edit</a></i>
+                                            </button>
+                                            <button class="btn tblActnBtn">
+                                                <i class="material-icons"><a class="text-dark" href="{{route('category.seo',$item->id)}}">queue_play_next</a></i>
                                             </button>
                                             <button wire:click="delete({{$item->id}})" class="btn tblActnBtn">
                                                 <i class="material-icons">delete</i>

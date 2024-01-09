@@ -104,7 +104,6 @@
                                         </div>
                                     </div>
                                 @endforeach
-
                             </div>
                             <div class="row clearfix mr-2">
                                 <div wire:ignore class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

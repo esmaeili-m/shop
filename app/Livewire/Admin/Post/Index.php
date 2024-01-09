@@ -19,7 +19,6 @@ class Index extends Component
         ]);
         $this->dispatch('item-update-status');
     }
-
     public function delete($id)
     {
         $item=Posts::find($id);

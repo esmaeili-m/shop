@@ -60,6 +60,20 @@
                     </li>
                 </ul>
             </li>
+            <li class="{{request()->routeIs('article.*') ? 'active' : ''}}">
+                <a href="#" onClick="return false;" class="menu-toggle">
+                    <i class="menu-icon ti-shopping-cart-full"></i>
+                    <span> مقالات </span>
+                </a>
+                <ul class="ml-menu">
+                    <li class="{{request()->routeIs('article.list') ? 'active' : ''}}">
+                        <a href="{{route('article.list')}}">لیست مقالات</a>
+                    </li>
+                    <li class="{{request()->routeIs('article.create') ? 'active' : ''}}">
+                        <a href="{{route('article.create')}}">افزودن مقالات جدید</a>
+                    </li>
+                </ul>
+            </li>
             <li>
                 <a href="#" onClick="return false;" class="menu-toggle">
                     <i class="menu-icon ti-shopping-cart-full"></i>

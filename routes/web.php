@@ -38,4 +38,10 @@ Route::prefix('admin')->group(function (){
     Route::get('seo/post/{id}',\App\Livewire\Admin\Post\Seo::class)->name('post.seo');
     Route::get('seo/update/post/{id}',\App\Livewire\Admin\Post\SeoUpdate::class)->name('post.seo.update');
     Route::get('list/attributes/{id}',\App\Livewire\Admin\Post\Attributes\Index::class)->name('post.attributes.index');
+//    <------------------- {{ Articles }} ----------------------->
+    Route::get('list/article',\App\Livewire\Admin\Articles\Index::class)->name('article.list');
+    Route::get('create/article',\App\Livewire\Admin\Articles\Create::class)->name('article.create');
+    Route::get('trash/article',\App\Livewire\Admin\Articles\Trash::class)->name('article.trash');
+    Route::get('update/article/{id}',\App\Livewire\Admin\Articles\Update::class)->name('article.update');
+
 });

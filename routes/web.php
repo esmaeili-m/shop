@@ -43,5 +43,9 @@ Route::prefix('admin')->group(function (){
     Route::get('create/article',\App\Livewire\Admin\Articles\Create::class)->name('article.create');
     Route::get('trash/article',\App\Livewire\Admin\Articles\Trash::class)->name('article.trash');
     Route::get('update/article/{id}',\App\Livewire\Admin\Articles\Update::class)->name('article.update');
+//    <------------------- {{ SocialMedia }} ----------------------->
+    Route::get('list/social',\App\Livewire\Admin\SocialMedia\Index::class)->name('social.list');
+    Route::get('update/social/{id}',\App\Livewire\Admin\SocialMedia\Update::class)->name('social.update');
+
 
 });

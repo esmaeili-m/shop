@@ -62,7 +62,7 @@
             </li>
             <li class="{{request()->routeIs('article.*') ? 'active' : ''}}">
                 <a href="#" onClick="return false;" class="menu-toggle">
-                    <i class="menu-icon ti-shopping-cart-full"></i>
+                    <i class="menu-icon ti-book "></i>
                     <span> مقالات </span>
                 </a>
                 <ul class="ml-menu">
@@ -73,6 +73,12 @@
                         <a href="{{route('article.create')}}">افزودن مقالات جدید</a>
                     </li>
                 </ul>
+            </li>
+            <li>
+                <a href="{{route('social.list')}}">
+                    <i class="menu-icon ti-instagram"></i>
+                    <span>سوشیال مدیا</span>
+                </a>
             </li>
             <li>
                 <a href="#" onClick="return false;" class="menu-toggle">

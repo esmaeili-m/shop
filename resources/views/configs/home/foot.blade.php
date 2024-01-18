@@ -5,6 +5,6 @@
 <script src="{{asset('dashboard/assets/js/pages/dashboard/dashboard2.js')}}"></script>
 <script src="{{asset('dashboard/assets/js/sweetalert2.js')}}"></script>
 @stack('scripts')
-@livewireScripts
 <script src="{{asset('dashboard/assets/js/livewire-sortable.js')}}"></script>
+@livewireScripts
 

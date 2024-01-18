@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('social_media', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('link');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

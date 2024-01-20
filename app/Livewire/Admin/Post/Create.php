@@ -14,6 +14,7 @@ class Create extends Component
 
     public $image;
     public $title;
+    public $inventory;
     public $slug;
     public $input=[];
     public $attributesCategory;
@@ -23,6 +24,7 @@ class Create extends Component
     use WithFileUploads;
     protected $rules=[
         'title'=>'required',
+        'inventory'=>'required',
         'category_id'=>'required',
         'slug'=>'required|unique:posts,slug',
     ];
@@ -30,6 +32,7 @@ class Create extends Component
     {
         return [
             'title.required' => 'فیلد عنوان الزامی می باشد.',
+            'inventory.required' => 'فیلد موجودی الزامی می باشد.',
             'slug.required' => 'فیلد آدرس الزامی می باشد.',
             'category_id.required' => 'فیلد دسته بندی الزامی می باشد.',
             'slug.unique' => 'آدرس وارد شده از قبل انتخاب شده است لطفا آدرس دیگری را وارد کنید.',
@@ -62,6 +65,11 @@ class Create extends Component
            'brand_id'=>$this->brand,
            'barcode'=>$barcode,
            'order'=>$order,
+        ]);
+        \App\Models\Store::create([
+           'post_id'=>$post->id,
+           'inventory'=>$this->inventory,
+           'leftOver'=>$this->inventory
         ]);
         if ($this->input){
             foreach ($this->input as $key => $i){

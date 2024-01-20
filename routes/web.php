@@ -46,6 +46,12 @@ Route::prefix('admin')->group(function (){
 //    <------------------- {{ SocialMedia }} ----------------------->
     Route::get('list/social',\App\Livewire\Admin\SocialMedia\Index::class)->name('social.list');
     Route::get('update/social/{id}',\App\Livewire\Admin\SocialMedia\Update::class)->name('social.update');
+//    <------------------- {{ Brands }} ----------------------->
+    Route::get('list/brand',\App\Livewire\Admin\Post\Brand\Index::class)->name('brand.list');
+    Route::get('update/brand/{id}',\App\Livewire\Admin\Post\Brand\Update::class)->name('brand.update');
+//    <------------------- {{ Store }} ----------------------->
+    Route::get('list/store/{id}',\App\Livewire\Admin\Post\Store::class)->name('store.list');
+
 
 
 });

@@ -54,11 +54,11 @@
                                         <th scope="row">{{$counter}}</th>
                                         <td>{{$item->barcode}}</td>
                                         <td>
-                                            <img class="border-radius-per-15" alt="test " width="80px" height="80px" src="{{asset($item->image)}}">
+                                            <img class="border-radius-per-5" alt="test " width="80px" height="80px" src="{{asset($item->image)}}">
                                         </td>
                                         <td>{{$item->title}}</td>
                                         <td>{{$item->slug}}</td>
-                                        <td><span  class="label l-bg-cyan shadow-style pointer">{{$item->category->title ?? ''}}</span></td>
+                                        <td><span  class="label bg-indigo  shadow-style pointer">{{$item->category->title ?? ''}}</span></td>
                                         <td>
                                             @if($item->status)
                                                 <span wire:click="status({{$item->id}},0)" class="label l-bg-cyan shadow-style pointer">فعال</span>
@@ -79,6 +79,9 @@
                                             </button>
                                             <button class="btn tblActnBtn">
                                                 <i class="material-icons"><a class="text-dark" href="{{route('post.seo',$item->id)}}">queue_play_next</a></i>
+                                            </button>
+                                            <button class="btn tblActnBtn">
+                                                <i class="material-icons"><a class="text-dark" href="{{route('store.list',$item->id)}}"> local_grocery_store</a></i>
                                             </button>
                                             <button wire:click="delete({{$item->id}})" class="btn tblActnBtn">
                                                 <i class="material-icons">delete</i>

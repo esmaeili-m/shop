@@ -16,11 +16,14 @@ class Update extends Component
     public $image;
     public $title;
     public $slug;
+    public $store;
     public $input=[];
     public $attributesCategory;
     public $category_id;
     public $brand;
+    public $inventory;
     public $description;
+    public $old_image;
     use WithFileUploads;
     protected $rules=[
         'title'=>'required',
@@ -38,7 +41,9 @@ class Update extends Component
     public function mount($id)
     {
          $this->post=Posts::find($id);
+         $this->store=\App\Models\Store::where('post_id',$id)->first();
          $this->title=$this->post->title;
+         $this->inventory= $this->store->inventory;
          $this->image=$this->post->image;
          $this->slug=$this->post->slug;
          $this->category_id=$this->post->category_id;
@@ -68,7 +73,7 @@ class Update extends Component
     public function updatingImage()
     {
         if (file_exists(public_path().'\\'.$this->image)){
-            unlink(public_path().'\\'.$this->image);
+            $this->old_image=public_path().'\\'.$this->image;
         }
     }
 
@@ -79,13 +84,13 @@ class Update extends Component
 
     public function create()
     {
-//        dd($this->attributesCategory->pluck('id'),$this->input);
         $validated = Validator::make(
-            ['slug' => $this->slug,'title'=>$this->title,'category_id'=>$this->category_id],
-            ['slug' => 'required|unique:posts,slug,'.$this->post->id,'title'=>'required','category_id'=>'required'],
+            ['slug' => $this->slug,'title'=>$this->title,'category_id'=>$this->category_id,'inventory'=>$this->inventory],
+            ['slug' => 'required|unique:posts,slug,'.$this->post->id,'title'=>'required','category_id'=>'required','inventory'=>'required'],
             ['slug.unique' => 'آدرس وارد شده از قبل انتخاب شده است لطفا آدرس دیگری را وارد کنید.',
              'category_id.required' => 'فیلد دسته بندی الزامی می باشد.',
              'title.required' => 'فیلد عنوان الزامی می باشد.',
+             'inventory.required' => 'فیلد موجودی الزامی می باشد.',
              'slug.required' => 'فیلد آدرس الزامی می باشد.',
                 ],
         )->validate();
@@ -97,6 +102,10 @@ class Update extends Component
             'image'=>$this->image,
             'category_id'=>$this->category_id,
             'brand_id'=>$this->brand,
+        ]);
+        $this->store->update([
+            'inventory'=>$this->inventory,
+            'leftOver'=>$this->inventory-($this->store->sold+$this->store->favorites)
         ]);
         if ($this->input){
             AttributesPosts::where('post_id',$this->post->id)->delete();
@@ -110,6 +119,9 @@ class Update extends Component
                 }
 
             }
+        }
+        if($this->old_image){
+            unlink($this->old_image);
         }
         return redirect()->route('post.list');
     }

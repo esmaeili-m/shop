@@ -46,7 +46,7 @@
 
                 </ul>
             </li>
-            <li class="{{request()->routeIs('post.*') ? 'active' : ''}}">
+            <li class="{{request()->routeIs('post.*') ? 'active' : ''}} {{request()->routeIs('brand.*') ? 'active' : ''}}">
                 <a href="#" onClick="return false;" class="menu-toggle">
                     <i class="menu-icon ti-shopping-cart-full"></i>
                     <span> فروشگاه </span>
@@ -57,6 +57,9 @@
                     </li>
                     <li class="{{request()->routeIs('post.create') ? 'active' : ''}}">
                         <a href="{{route('post.create')}}">افزودن محصول جدید</a>
+                    </li>
+                    <li class="{{request()->routeIs('brand.list') ? 'active' : ''}}">
+                        <a href="{{route('brand.list')}}">برندها</a>
                     </li>
                 </ul>
             </li>

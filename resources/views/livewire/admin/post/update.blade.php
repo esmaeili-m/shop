@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                             <div class="row clearfix mt-4">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                                     <div class="form-group">
                                         <label for="email_address_2">دسته بندی محصول</label>
                                         <div class="form-line">
@@ -80,7 +80,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                                     <div class="form-group">
                                         <div class="form-line">
                                             <label>برند</label>
@@ -95,6 +95,20 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label>تعداد موجودی</label>
+                                        <div class="form-line">
+                                            <input wire:model.lazy="inventory" type="number"  class="form-control" placeholder="موجودی محصول را وارد کنید">
+                                        </div>
+                                    </div>
+                                    @error('inventory')
+                                    <div class="mt-1 ml-1 alert alert-danger border-radius-per-6">
+                                        <p>{{$message}}</p>
+                                    </div>
+                                    @enderror
+                                </div>
+
                             </div>
                             <div class="row clearfix mt-4">
                                 @foreach($attributesCategory ?? [] as $key => $value)

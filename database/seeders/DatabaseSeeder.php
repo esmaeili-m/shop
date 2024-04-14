@@ -13,8 +13,8 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call(CategoryTableSeeder::class);
-        $this->call(PostsTableSeeder::class);
-        $this->call(ColorTableSeeder::class);
-        $this->call(BrandTableSeeder::class);
+//        $this->call(PostsTableSeeder::class);
+//        $this->call(ColorTableSeeder::class);
+//        $this->call(BrandTableSeeder::class);
     }
 }

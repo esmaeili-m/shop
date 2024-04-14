@@ -50,7 +50,7 @@
                                             <select wire:model.lazy="title">
                                                 <option value=""  selected>گزینه خود را انتخاب کنید</option>
                                                 <option value="Telegram">Telegram</option>
-                                                <option value="Instageram">Instageram</option>
+                                                <option value="Instagram">Instageram</option>
                                                 <option value="WhatsApp">WhatsApp</option>
                                                 <option value="Behance">Behance</option>
                                                 <option value="facebook">facebook</option>

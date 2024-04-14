@@ -77,7 +77,7 @@
                                     <div wire:ignore class="input-field col s12">
                                         <select wire:model.lazy="parent_id">
                                             <option value=""  selected>گزینه خود را انتخاب کنید</option>
-                                            @foreach(\App\Models\Category::whereNull('parent_id')->pluck('title','id') as $key => $value)
+                                            @foreach(\App\Models\Category::pluck('title','id') as $key => $value)
                                                 <option value="{{$key}}">{{$value}}</option>
                                             @endforeach
                                         </select>

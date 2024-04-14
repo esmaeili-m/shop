@@ -12,10 +12,10 @@ use App\Livewire\Admin\Dashboard;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+//    <------------------------------------------------------------------------- {{ Home }} -------------------------------------------------------------------->
+Route::get('/',\App\Livewire\Home\Index::class)->name('home');
+//    <------------------------------------------------------------------------- {{ Dashboard }} -------------------------------------------------------------------->
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::prefix('admin')->group(function (){
     Route::get('dashboard',Dashboard::class)->name('dashboard');
 
@@ -51,7 +51,12 @@ Route::prefix('admin')->group(function (){
     Route::get('update/brand/{id}',\App\Livewire\Admin\Post\Brand\Update::class)->name('brand.update');
 //    <------------------- {{ Store }} ----------------------->
     Route::get('list/store/{id}',\App\Livewire\Admin\Post\Store::class)->name('store.list');
-
-
+//    <------------------- {{ Users }} ----------------------->
+    Route::get('list/user',\App\Livewire\Admin\User\Index::class)->name('user.list');
+    Route::get('create/user',\App\Livewire\Admin\User\Create::class)->name('user.create');
+    Route::get('trash/user',\App\Livewire\Admin\User\Trash::class)->name('user.trash');
+    Route::get('update/user/{id}',\App\Livewire\Admin\User\Update::class)->name('user.update');
+    Route::get('role/user',\App\Livewire\Admin\User\Role::class)->name('user.role');
+    Route::get('permission/user/{id}',\App\Livewire\Admin\User\Permission::class)->name('user.permission');
 
 });

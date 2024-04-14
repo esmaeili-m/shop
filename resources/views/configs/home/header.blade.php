@@ -1,185 +1,50 @@
-<nav class="navbar">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
-               aria-expanded="false"></a>
-            <a href="#" onClick="return false;" class="bars"></a>
-            <a class="navbar-brand" href="index.html">
-                <img src="../../assets/images/logo.png" alt="" />
-                <span class="logo-name">آتریو</span>
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav navbar-left">
+<nav id="menu-wrap" class="menu-back cbp-af-header menu-have-back-color">
+    <div class="parallax-1" ></div>
+    <div class="dark-over"></div>
+    <div class="menu-container">
+        <div class="logo"><img src="{{asset('/home')}}/images/logo-light.png" alt=""/></div>
+        <div  class="menu">
+
+            <ul class="rtl-menu persian">
                 <li>
-                    <a href="#" onClick="return false;" class="sidemenu-collapse">
-                        <i class="nav-hdr-btn ti-align-left"></i>
-                    </a>
+                    <a href="#"  class="curent-multi-page">صفحه اصلی</a>
                 </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Full Screen Button -->
-                <li class="fullscreen">
-                    <a href="javascript:;" class="fullscreen-btn">
-                        <i class="nav-hdr-btn ti-fullscreen"></i>
-                    </a>
-                </li>
-                <!-- #END# Full Screen Button -->
-                <!-- #START# Notifications-->
-                <li class="dropdown">
-                    <a href="#" onClick="return false;" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                        <i class="nav-hdr-btn ti-bell"></i>
-                        <span class="notify"></span>
-                        <span class="heartbeat"></span>
-                    </a>
-                    <ul class="dropdown-menu pullDown">
-                        <li class="header">اطلاعیه ها</li>
-                        <li class="body">
-                            <ul class="menu">
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="../../assets/images/user/user1.jpg" alt="">
-                                            </span>
-                                        <span class="menu-info">
-                                                <span class="menu-title">حسین حیاتی</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 14 دقیقه پیش
-                                                </span>
-                                                <span class="menu-desc">لطفا ایمیل خود را چک کنید.</span>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="../../assets/images/user/user2.jpg" alt="">
-                                            </span>
-                                        <span class="menu-info">
-                                                <span class="menu-title">حسین حیاتی</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 22 دقیقه پیش
-                                                </span>
-                                                <span class="menu-desc">لطفا ایمیل خود را چک کنید.</span>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="../../assets/images/user/user3.jpg" alt="">
-                                            </span>
-                                        <span class="menu-info">
-                                                <span class="menu-title">حسین حیاتی</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 3 ساعت پیش
-                                                </span>
-                                                <span class="menu-desc">لطفا ایمیل خود را چک کنید.</span>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="../../assets/images/user/user4.jpg" alt="">
-                                            </span>
-                                        <span class="menu-info">
-                                                <span class="menu-title">حسین حیاتی</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 3 ساعت پیش
-                                                </span>
-                                                <span class="menu-desc">لطفا ایمیل خود را چک کنید.</span>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="../../assets/images/user/user5.jpg" alt="">
-                                            </span>
-                                        <span class="menu-info">
-                                                <span class="menu-title">حسین حیاتی</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 3 ساعت پیش
-                                                </span>
-                                                <span class="menu-desc">لطفا ایمیل خود را چک کنید.</span>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="../../assets/images/user/user6.jpg" alt="">
-                                            </span>
-                                        <span class="menu-info">
-                                                <span class="menu-title">حسین حیاتی</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 3 ساعت پیش
-                                                </span>
-                                                <span class="menu-desc">لطفا ایمیل خود را چک کنید.</span>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="../../assets/images/user/user7.jpg" alt="">
-                                            </span>
-                                        <span class="menu-info">
-                                                <span class="menu-title">حسین حیاتی</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> دیروز
-                                                </span>
-                                                <span class="menu-desc">لطفا ایمیل خود را چک کنید.</span>
-                                            </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="footer">
-                            <a href="#" onClick="return false;">مشاهده تمام اطلاعیه ها</a>
-                        </li>
+                <li >
+                    <a href="#">دسته بندی ها</a>
+                    <ul style="border-radius: 10px;border:1px solid #065fb9"
+                        class="persion-subcategory">
+                        @foreach(\App\Models\Category::whereNull('parent_id')->with('descendants')->get() as $item)
+                            <li>
+                                <p>{{$item->title}}</p>
+                                <ul class="">
+                                    @foreach($item->descendants as $child)
+                                        <li>
+                                            <a href="mas-two-col.html">{{$child->title}}</a>
+                                        </li>
+                                        @foreach($child->descendants ?? [] as $subchild)
+                                            <li>
+                                                <a href="mas-two-col.html">{{$subchild->title}}</a>
+                                            </li>
+                                        @endforeach
+                                    @endforeach
+                                </ul>
+                            </li>
+                        @endforeach
                     </ul>
                 </li>
-                <!-- #END# Notifications-->
-                <li class="dropdown user_profile">
-                    <div class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="../../assets/images/user.jpg" alt="user">
-                    </div>
-                    <ul class="dropdown-menu pullDown">
-                        <li class="body">
-                            <ul class="user_dw_menu">
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                        <i class="material-icons">person</i>پروفایل
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                        <i class="material-icons">feedback</i>بازخورد
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                        <i class="material-icons">help</i>راهنما
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" onClick="return false;">
-                                        <i class="material-icons">power_settings_new</i>خروج
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <!-- #END# Tasks -->
-                <li class="pull-right">
-                    <a href="#" onClick="return false;" class="js-right-sidebar" data-close="true">
-                        <i class="nav-hdr-btn ti-layout-grid2"></i>
-                    </a>
-                </li>
+                <li><a href="contact.html">شگفت انگیز ها</a></li>
+                <li><a href="contact.html">پرفروش ترین ها</a></li>
+                <li><a href="contact.html">تخفیف و پیشنهادها</a></li>
+                <li><a href="contact.html">درباره ما</a></li>
+                <li><a href="contact.html">ارتباط با ما</a></li>
+                @foreach(\App\Models\SocialMedia::get() as $item)
+                    <li class="social-mobile">
+                        <a href="{{$item->link}}" class="social first-icon fa-{{strtolower($item->title)}} tipped" data-title="twitter"
+                                                 data-tipper-options='{"direction":"bottom","follow":"true","margin":5}'>
+                        </a>
+                    </li>
+                @endforeach
             </ul>
         </div>
     </div>
-</nav>
+</nav><!-- END MENU==================================================-->

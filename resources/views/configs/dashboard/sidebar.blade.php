@@ -83,6 +83,23 @@
                     <span>سوشیال مدیا</span>
                 </a>
             </li>
+            <li class="{{request()->routeIs('user.*') ? 'active' : ''}}">
+                <a href="#" onClick="return false;" class="menu-toggle">
+                    <i class="menu-icon ti-book "></i>
+                    <span> کاربران </span>
+                </a>
+                <ul class="ml-menu">
+                    <li class="{{request()->routeIs('user.list') ? 'active' : ''}}">
+                        <a href="{{route('user.list')}}">لیست کاربران</a>
+                    </li>
+                    <li class="{{request()->routeIs('user.create') ? 'active' : ''}}">
+                        <a href="{{route('user.create')}}">افزودن کاربر جدید</a>
+                    </li>
+                    <li class="{{request()->routeIs('user.create') ? 'active' : ''}}">
+                        <a href="{{route('user.role')}}">نقش ها</a>
+                    </li>
+                </ul>
+            </li>
             <li>
                 <a href="#" onClick="return false;" class="menu-toggle">
                     <i class="menu-icon ti-shopping-cart-full"></i>

@@ -1,0 +1,259 @@
+body, html {
+    overflow-x: hidden;
+    letter-spacing: 0 !important;
+}
+
+a, a:visited, p a, p a:visited {
+    text-decoration: none
+}
+.persion-subcategory{
+    text-align: right;
+    font-family: IranSanse;
+}
+ol, ul {
+    list-style: none
+}
+
+.clear, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    background: #212121;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #f9f9f9;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    -webkit-text-size-adjust: 100%
+}
+
+html {
+    height: 100%
+}
+
+.clear, hr {
+    clear: both;
+    height: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    text-align: center
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: inherit
+}
+
+h5, h6 {
+    font-weight: 500
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 42px
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 38px
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 24px
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 20px
+}
+
+p img {
+    margin: 0
+}
+
+p.lead {
+    font-size: 21px;
+    line-height: 27px;
+    color: #777
+}
+
+em {
+    font-style: italic
+}
+
+strong {
+    font-weight: 600
+}
+
+small {
+    font-size: 80%
+}
+
+blockquote, blockquote p {
+    font-size: 17px;
+    line-height: 24px;
+    color: #777
+}
+
+blockquote {
+    margin: 0 0 20px;
+    padding: 9px 20px 0 19px
+}
+
+blockquote cite {
+    display: block;
+    font-size: 12px;
+    color: #555
+}
+
+blockquote cite:before {
+    content: "\2014 \0020"
+}
+
+blockquote cite a, blockquote cite a:visited {
+    color: #555
+}
+
+hr {
+    border: solid #323a3d;
+    border-width: 1px 0 0;
+    margin: 0 10px;
+    position: relative
+}
+
+a:focus, a:hover {
+    color: #e74c3c
+}
+
+p a, p a:visited {
+    line-height: inherit
+}
+
+a:focus {
+    outline: 0
+}
+
+ol {
+    list-style: decimal
+}
+
+ol, ul.circle, ul.disc, ul.square {
+    margin-left: 30px
+}
+
+ul.square {
+    list-style: square
+}
+
+ul.circle {
+    list-style: circle
+}
+
+ul.disc {
+    list-style: disc
+}
+
+ol ol, ol ul, ul ol, ul ul {
+    font-size: 90%
+}
+
+li {
+    line-height: 18px
+}
+
+li p, ul.large li {
+    line-height: 21px
+}
+
+.button, button, input[type=submit], input[type=reset], input[type=button] {
+    cursor: pointer
+}
+
+.button.full-width, button.full-width, input[type=submit].full-width, input[type=reset].full-width, input[type=button].full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+.remove-bottom {
+    margin-bottom: 0 !important
+}
+
+.half-bottom {
+    margin-bottom: 12.5px !important
+}
+
+.add-bottom {
+    margin-bottom: 25px !important
+}
+
+.remove-top {
+    margin-top: 0 !important
+}
+
+.half-top {
+    margin-top: 12.5px !important
+}
+
+.add-top {
+    margin-top: 25px !important
+}
+
+.clear {
+    overflow: hidden;
+    visibility: hidden;
+    width: 0
+}
+
+::selection {
+    color: #fff
+}
+
+::-moz-selection {
+    color: #fff
+}

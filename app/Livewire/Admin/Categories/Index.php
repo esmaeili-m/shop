@@ -23,11 +23,6 @@ class Index extends Component
     public function delete($id)
     {
         $category=Category::find($id);
-//        if($category->image){
-//            if(fileExists(public_path('/').$category->image)){
-//                unlink(public_path('/').$category->image);
-//            }
-//        }
         $this->dispatch('category-delete',title:$category->title);
         $category->delete();
     }

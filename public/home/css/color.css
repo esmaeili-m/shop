@@ -1,0 +1,43 @@
+.audiojs .progress, .price-description button, ::selection {
+    background: #e87638
+}
+
+#royal_preloader.royal_preloader_number .royal_preloader_percentage:after, .Newspaper-Subtitle, .about-wrap .about-icon, .author:hover, .blog-post h4:hover, .blog-post h5:hover, .cart-slide-out .cart-slide-out-item .inside-cart-out-item a:hover, .cart-slide-out .cart-slide-out-item .inside-cart-out-item p, .cbp-af-header.cbp-af-header-shrink .menu.light > ul > li a.curent-multi-page, .cbp-af-header.cbp-af-header-shrink .menu.light > ul > li a.social:hover, .cbp-af-header.cbp-af-header-shrink .menu > ul > li a.curent-multi-page, .cbp-af-header.cbp-af-header-shrink .menu > ul > li a.social:hover, .cbp-af-header.cbp-af-header-shrink .menu > ul > li > ul.normal-sub li a.subtitled, .cbp-af-header.cbp-af-header-shrink ul.slimmenu li a.mPS2id-highlight, .cbp-af-header.cbp-af-header-shrink ul.slimmenu li a:hover, .checkout-wrap .name:hover, .checkout-wrap .total, .com-views span, .counter-wrap.freelance-num p, .error, .go-to-post:hover, .go-to-post:hover span, .link-recents a:hover, .list-social-team li.icon-team a:hover, .logo-down-wrap .logo-down-icon, .menu a span.link-icon, .menu.light > ul > li a.curent-multi-page, .menu.light > ul > li a.social:hover, .menu > ul > li a.curent-multi-page, .menu > ul > li a.social:hover, .menu > ul > li a:hover, .menu > ul > li > ul.normal-sub li a.subtitled, .menu > ul > li > ul > li a span, .menu > ul > li > ul > li p span, .name-aut-replay a, .portfolio-box-1 .product-det h4 span, .price-description .sku a:hover, .price-description .stock, .price-description h3 span, .prices-wrap.colored p, .tags a:hover, .tp-caption.Newspaper-Subtitle, ul.slimmenu li a.mPS2id-highlight, ul.slimmenu li a:hover {
+    color: #065fb9
+}
+
+#ajax-form button:hover, #cd-zoom-in, #cd-zoom-out, #owl-blog-1.owl-theme .owl-controls .owl-page span:hover, #owl-blog-1.owl-theme .owl-controls .owl-page.active span, #owl-blog.owl-theme .owl-controls .owl-page span:hover, #owl-blog.owl-theme .owl-controls .owl-page.active span, #owl-product.owl-theme .owl-controls .owl-page span:hover, #owl-product.owl-theme .owl-controls .owl-page.active span, #owl-sep-1.owl-theme .owl-controls .owl-page span:hover, #owl-sep-1.owl-theme .owl-controls .owl-page.active span, #owl-slider.owl-theme .owl-controls .owl-page span:hover, #owl-slider.owl-theme .owl-controls .owl-page.active span, #royal_preloader.royal_preloader_progress .royal_preloader_meter, .checkout-button:hover, .comments button, .home-text-wrap p span, .link-tag a:hover, .list-social-footer li:hover, .portfolio-box-1 .product-det .product-links a:first-child, .portfolio-box-1 .product-det .product-links a:hover, .pricing-plan .button, .pro-bar, .sidebar input:active, .sidebar input:focus, .tp-loader.spinner2 {
+    background-color: #065fb9
+}
+
+#filter li .current, #filter li a:hover {
+    border: 2px solid #065fb9
+}
+
+#ajax-form input:active, #ajax-form input:focus, #ajax-form textarea:active, #ajax-form textarea:focus, .comments input:active, .comments input:focus, .comments textarea:active, .comments textarea:focus, .menu.light #ajax-form input:active, .menu.light #ajax-form input:focus, .menu.light #ajax-form textarea:active, .menu.light #ajax-form textarea:focus {
+    border-bottom: 1px solid #065fb9
+}
+
+.gu-box {
+    border-left: 2px solid #065fb9
+}
+
+.sidebar input:-ms-input-placeholder {
+    color: #065fb9
+}
+
+.sidebar input::-moz-placeholder {
+    color: #e87638
+}
+
+.sidebar input:-moz-placeholder {
+    color: #e87638
+}
+
+.sidebar input::-webkit-input-placeholder {
+    color: #e87638
+}
+
+::-moz-selection {
+    background: #e87638
+}

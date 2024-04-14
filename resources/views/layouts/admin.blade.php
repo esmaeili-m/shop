@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@include('configs.home.head')
+@include('configs.dashboard.head')
 
 <body class="light rtl theme-black logo-white submenu-closed">
 <!-- Page Loader -->
@@ -15,17 +15,17 @@
 {{--</div>--}}
 <div class="overlay"></div>
 
-    @include('configs.home.header')
+    @include('configs.dashboard.header')
 
 <div>
 
-    @include('configs.home.sidebar')
+    @include('configs.dashboard.sidebar')
 
 </div>
     {{$slot}}
-@include('configs.home.foot')
+{{--@include('configs.dashboard.foot')--}}
+<livewire:config.dashboard.foot />
 
 <x-livewire-alert::flash />
 </body>
-
 </html>
